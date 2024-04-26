@@ -16,8 +16,8 @@ def user_input_features():
     Blood_pressure = st.sidebar.slider('Blood Pressure', 0, 122, 72)
     Skin_thickness = st.sidebar.slider('Skin Thinkness', 0, 99, 35)
     Insulin = st.sidebar.slider('Insulin', 0, 846, 0)
-    BMI = st.sidebar.slider('BMI', 0, 68, 33, 0.1)
-    DiabetesPedigreeFunction = st.sidebar.slider('DiabetesPedigreeFunction', 0, 3, 0.672, 0.001)
+    BMI = st.number_input(label='BMI',step=1.,format="%.2f")
+    DiabetesPedigreeFunction = st.number_input(label='DiabetesPedigreeFunction',step=1.,format="%.2f")
     Age = st.sidebar.slider('Age', 0, 100, 50)
     data = {'Pregnancies': Pregnancies_week,
             'Glucose': Glucose_level,
