@@ -1,9 +1,9 @@
-import streamlit as st
+simport streamlit as st
 import pandas as pd
 import pickle
 
 st.write("""
-# Fuel Consumption Model
+# Diabetes Prediction Model
 
 This app predicts the **Diabetis probability** by selected parameter!
 """)
